@@ -1,0 +1,24 @@
+a. Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 423 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ggodfreygit/Assignment1.git
+   5776ad6..4557012  master -> master
+  
+b. Using "git log" I am able to determine that 9 commits have been done to this repository.
+
+c. By using "git log .gitignore" I am able to determine that .gitignore was last modified Wed, Sep 27, at 4:31 2017 by irlabuser (???).
+
+d. The IDs of the commits used to merge "development" and "master" are cb30d72a3d94c108f393c163a35c1cc9bf18ffca and 36a8e55e4bbdd171ab57d979e1a802d740f2db9b.
+
+e. Branches in a Git repository can be used to ensure that two people can work on the same program without accidentally writing code that conflicts with one another, as Git checks for this. You can also use branches to test multiple features of a project at once, in seperate development cycles, before the final product is produced.
+
+f. "git status" shows you the status of your current repository (and the files in it) and compares it against the current status of the repository, showing you any files you might not have pushed yet. "git log" shows you all of the commits (and their corresponding descriptions) that have occured over the course of the project. Passing in a filename shows you all of the commits that have changed that specific file.
+
+g. "git log Weapon.h"
+
+h. "git log --grep="file"
+
+i. In object oriented programming, inheritance allows new classes to recieve the properties of existing classes, ergo, the child class can use some or all of the properties of the parent class. Encapsulation is the idea that you can hide complexities of a class through the use of interfaces (often called "driver functions"). Polymorphism is the idea that multiple classes may work in a given situation. More simply put, if two classes (often the parent and child classes) share much of the same functionality, and a function calls for the use of the parent class, using the child class may work as an appropriate substitute.
