@@ -22,3 +22,6 @@ g. "git log Weapon.h"
 h. "git log --grep="file"
 
 i. In object oriented programming, inheritance allows new classes to recieve the properties of existing classes, ergo, the child class can use some or all of the properties of the parent class. Encapsulation is the idea that you can hide complexities of a class through the use of interfaces (often called "driver functions"). Polymorphism is the idea that multiple classes may work in a given situation. More simply put, if two classes (often the parent and child classes) share much of the same functionality, and a function calls for the use of the parent class, using the child class may work as an appropriate substitute.
+
+
+7. The RoleGame prototype is using primarily polymorphism. It makes limited use of encapsulation in the way of masking damage calculations, but that is hardly the crux of the assignment. It uses polymorphism extensively by adapting many different child classes (various weapons) to suit the role of the parent class (weapons class).
