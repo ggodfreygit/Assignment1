@@ -8,6 +8,8 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 #include "Weapon.h"
 #include "WeaponFactory.h"
 
@@ -28,7 +30,7 @@ void simulateWeapon(Weapon * weapon, double armor) {
  * 
  */
 int main(int argc, char** argv) {
-
+	srand (time(NULL));		//to seed crazyswords random values!
     double armor = 20;
 
     Weapon *weapon = WeaponFactory::getInstance()->getWeapon("sword");
@@ -38,6 +40,18 @@ int main(int argc, char** argv) {
     weapon = WeaponFactory::getInstance()->getWeapon("spear");
     simulateWeapon(weapon, armor);
     delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("axe");
+	simulateWeapon(weapon, armor);
+	delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("crazysword");
+	simulateWeapon(weapon, armor);
+	delete(weapon);
+	
+	weapon = WeaponFactory::getInstance()->getWeapon("paperkatana");
+	simulateWeapon(weapon, armor);
+	delete(weapon);
 
     return 0;
 }
